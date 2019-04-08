@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS dogwalkerdb;
+DROP DATABASE IF EXISTS dogwalker_db;
 
 
-CREATE DATABASE dogwalkerdb;
+CREATE DATABASE dogwalker_db;
 

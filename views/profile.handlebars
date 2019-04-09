@@ -5,7 +5,14 @@
     <ul id="example-list" class="list-group">
       {{#each users}}
       <li data-id="{{id}}" class="list-group-item">
-        <a href="example/{{id}}">{{email}}</a>
+        <a href="example/{{id}}">
+        {{firstName}} {{lastName}}
+        <br>
+        {{adress}}
+        <br>
+        {{city}}{{state}}{{zip}}
+        <br>
+        {{email}}</a>
         <button class="btn btn-danger float-right delete">ｘ</button>
       </li>
       {{/each}}

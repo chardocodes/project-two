@@ -4,7 +4,7 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = app => {
   // Get all examples
-  app.get("/api/examples", isAuthenticated, (req, res) => {
+  app.get("/api/examples", (req, res) => {
     db.Example.findAll({
       where: {
         UserId: req.user.id
@@ -15,7 +15,7 @@ module.exports = app => {
   });
 
   // Create a new example
-  app.post("/api/examples", isAuthenticated, (req, res) => {
+  app.post("/api/examples", (req, res) => {
     db.Example.create({
       UserId: req.user.id,
       text: req.body.text,
@@ -26,7 +26,7 @@ module.exports = app => {
   });
 
   // Delete an example by id
-  app.delete("/api/examples/:id", isAuthenticated, (req, res) => {
+  app.delete("/api/examples/:id", (req, res) => {
     db.Example.destroy({ where: { id: req.params.id } }).then(dbExample => {
       res.json(dbExample);
     });

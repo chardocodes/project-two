@@ -12,16 +12,14 @@
 
                     <div class="col-md-6 mb-3">
                         <label for="validationServer01">First name</label>
-                        <input type="name" class="form-control" id="name"
-                            placeholder="First name" value="First Name" required>
+                        <input type="name" class="form-control" id="name" placeholder="First name" required>
                         <div class="valid-feedback">
 
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="validationServer02">Last name</label>
-                        <input type="lastName" class="form-control" id="lastName" placeholder="Last name"
-                            value="Last Name" required>
+                        <input type="lastName" class="form-control" id="lastName" placeholder="Last name" required>
                         <div class="valid-feedback">
 
                         </div>
@@ -29,27 +27,28 @@
 
                     <div class="col-md-6 mb-3">
                         <label for="validationServer03">Address: </label>
-                        <input type="address" class="form-control" id="address" placeholder="Address"
-                            required>
+                        <input type="address" class="form-control" id="address" placeholder="Address" required>
                         <div class="valid-feedback"></div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="validationServer04">City: </label>
-                        <input type="city" class="form-control" id="city" placeholder="City"
-                            required>
+                        <input type="city" class="form-control" id="city" placeholder="City" required>
                         <div class="valid-feedback"></div>
                     </div>
 
                     <div class="col-md-6 mb-3">
                         <label for="validationServer05">State: </label>
-                        <input type="state" class="form-control" id="state" placeholder="State"
-                            required>
+                        <select class="form-control" id="state" required>
+                            <option value="" selected>select your state</option>
+                            {{#each states}}
+                            <option>{{ name }}</option>
+                            {{/each}}
+                        </select>
                         <div class="valid-feedback"></div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="validationServer06">Zip: </label>
-                        <input type="zip" class="form-control" id="zip" placeholder="Zip"
-                            required>
+                        <input type="zip" class="form-control" id="zip" placeholder="Zip" required>
                         <div class="valid-feedback"></div>
                     </div>
                     <div class="col-md-6 mb-3"></div>
@@ -72,22 +71,24 @@
         <br>
         <button type="submit" class="btn btn-primary" class="w-100">Submit</button>
         </form>
-       
 
 
-        
+
+
     </div>
 
 </div>
-  <h1>Hello {{user.email}}!</h1>
-    <form class="clearfix mb-4" action="POST">
-      <div class="form-group">
+<h1>Hello {{user.email}}!</h1>
+<form class="clearfix mb-4" action="POST">
+    <div class="form-group">
         <label for="example-text">Example Text</label>
-        <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-      </div>
-      <div class="form-group">
+        <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+            placeholder="Enter Example Text">
+    </div>
+    <div class="form-group">
         <label for="example-description">Example Description</label>
-        <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea> 
-      </div>
-      <button id="submit" class="btn btn-primary float-right">SUBMIT</button>
-    </form>  
+        <textarea class="form-control" id="example-description" aria-describedby="example-description"
+            placeholder="Enter Example Description"></textarea>
+    </div>
+    <button id="submit" class="btn btn-primary float-right">SUBMIT</button>
+</form>

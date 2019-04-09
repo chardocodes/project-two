@@ -1,9 +1,13 @@
 const db = require("../models");
 const isAuthenticated = require("../config/middleware/isAuthenticated");
+const states = require("./states.js")
+
 module.exports = app => {
   // Load signup page
   app.get("/", (req, res) => res.render("dogwalkers"));
-  app.get("/signup", (req, res) => res.render("signup"));
+  app.get("/signup", (req, res) => res.render("signup", {
+    states: states,
+  }));
   app.get("/profile", (req, res) => res.render("profile"));
   app.get("/dogwalkers", (req, res) => res.render("dogwalkers"));
 

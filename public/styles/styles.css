@@ -8,10 +8,34 @@
   margin-top: -30px;
 
 }
+.card {
+  box-align: center;
+  opacity: 0.8;
+   margin-left: 270px;
+}  
+
+/* .card-body {
+  opacity: 10;
+} */
+
+.container {
+  background-color: rgb(231, 202, 173); 
+  text-align: center;
+ 
+}
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
+
+.card-header {
+  background-color: #777;
+  color: ivory;
   
-
-
-
+}
+ .logBox {
+   margin-left: 800px;
+ }
 
 /* =============================== */
 /*!

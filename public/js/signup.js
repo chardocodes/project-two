@@ -9,7 +9,25 @@ $("#user-sign-up").on("submit", function(e) {
         .trim(),
       password: $("#password")
         .val()
-        .trim()
+        .trim(),
+        firstName: $("#name")
+        .val()
+        .trim(),
+        lastName: $("#lastName")
+        .val()
+        .trim(),
+        address: $("#address")
+        .val()
+        .trim(),
+        city: $("#city")
+        .val()
+        .trim(),
+        state: $("#state")
+        .val()
+        .trim(),
+        zip: $("#zip")
+        .val()
+        .trim(),
     }
   })
     .then(function(data) {

@@ -12,17 +12,13 @@ module.exports = app => {
   app.get("/dogwalkers", (req, res) => res.render("dogwalkers"));
 
   // Load login page
-  app.get("/login", (req, res) => res.render("login"));
+  // app.get("/login", (req, res) => res.render("login"));
 
   // Load profile page
-  app.get("/profile", isAuthenticated, (req, res) => {
-    db.User.findOne({
-      where: {
-        id: req.user.id
-      },
-      include: [db.Example]
-    }).then(dbUser => {
-      res.render("profile", { user: dbUser });
+  app.get("/profile", (req, res) => {
+    db.User.findAll().then(dbAllUsers => {
+      console.log(dbAllUsers);
+      res.render("profile", { users : dbAllUsers });
     });
   });
 

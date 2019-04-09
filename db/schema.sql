@@ -6,5 +6,4 @@ CREATE DATABASE dogo_db;
 USE dogo_db;
 
 CREATE TABLE dogo;
-SELECT * FROM dogo;
-
+SELECT * FROM Users;

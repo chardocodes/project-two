@@ -3,9 +3,9 @@
   
     <h3>Examples:</h3>
     <ul id="example-list" class="list-group">
-      {{#each user.Examples}}
-      <li data-id="{{this.id}}" class="list-group-item">
-        <a href="example/{{this.id}}">{{this.text}}</a>
+      {{#each users}}
+      <li data-id="{{id}}" class="list-group-item">
+        <a href="example/{{id}}">{{email}}</a>
         <button class="btn btn-danger float-right delete">ｘ</button>
       </li>
       {{/each}}

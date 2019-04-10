@@ -55,6 +55,8 @@ module.exports = app => {
       state: req.body.state,
       zip: req.body.zip,
       email: req.body.email,
+      phone: req.body.phone,
+      rate: req.body.rate,
       password: req.body.password
     })
       .then(() => {

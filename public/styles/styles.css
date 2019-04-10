@@ -9,15 +9,29 @@
 .card {
   box-align: center;
   opacity: 0.8;
-   margin-left: 270px;
+  margin-left: 270px;
+  font-family: 'Viga', sans-serif;
 }  
 
+.btn {
+  font-family: 'Courgette', cursive;
+}
+
+.navbar-brand {
+  text-align: center;
+}
+
+
 body {
-  background-color: rgb(215, 219, 221);
+  background-image: url("https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-image: url('https://topdogtips.com/wp-content/uploads/2016/07/Dog-Walker-Jobs.jpg');
   background-repeat: no-repeat;    
   background-attachment: fixed;
-  background-position: center; 
+  /* background-position: center;  */
+  background-size: cover;
+  border-bottom-color: #eee;
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Viga', sans-serif;
   
 
 }
@@ -30,11 +44,12 @@ body {
   margin-left: auto;
   margin-right: auto } */
 
-.card-header {
+/* .card-header {
   background-color: #777;
   color: ivory;
+  font-family: 'Lobster Two', cursive;
   
-}
+} */
  .logBox {
    margin-left: 800px;
  }

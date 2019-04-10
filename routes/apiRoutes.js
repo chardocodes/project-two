@@ -26,11 +26,11 @@ module.exports = app => {
   });
 
   // Delete an example by id
-  app.delete("/api/examples/:id", (req, res) => {
-    db.Example.destroy({ where: { id: req.params.id } }).then(dbExample => {
-      res.json(dbExample);
-    });
-  });
+  // app.delete("/api/examples/:id", (req, res) => {
+  //   db.Example.destroy({ where: { id: req.params.id } }).then(dbExample => {
+  //     res.json(dbExample);
+  //   });
+  // });
 
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.

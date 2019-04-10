@@ -8,10 +8,7 @@ module.exports = app => {
   app.get("/signup", (req, res) => res.render("signup", {
     states: states,
   }));
-  app.get("/profile", (req, res) => res.render("profile"));
-  app.get("/dogwalkers", (req, res) => res.render("dogwalkers"));
-
-  // Load login page
+  
   // app.get("/login", (req, res) => res.render("login"));
 
   // Load profile page

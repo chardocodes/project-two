@@ -4,13 +4,19 @@
       <div class="card-body">
         <h5 class="card-title">HOME PAGE</h5>
         <p>
-          <strong>ID</strong>: {{example.id}}</p>
+          <strong>Name</strong>:
+          {{users.firstName}} {{users.lastName}}
+          <br>
+          {{users.address}}
+          <br>
+          {{users.city}},{{users.state}},{{users.zip}}
+          <br>
+          {{users.email}}</a>
+        </p>
         <p>
-        <p>
-          <strong>Text</strong>: {{example.text}}</p>
-        <p>
-          <strong>Description:</strong> {{example.description}}</p>
-          <a href="/client">← Back To Home</a>
+          
+            <strong>Description:</strong> {{example.description}}</p>
+          <a href="/profile">← Back To Home</a>
       </div>
     </div>
   </div>

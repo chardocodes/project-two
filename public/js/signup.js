@@ -10,29 +10,29 @@ $("#user-sign-up").on("submit", function (e) {
       password: $("#password")
         .val()
         .trim(),
-      firstName: $("#name")
+        firstName: $("#name")
         .val()
         .trim(),
-      lastName: $("#lastName")
+        lastName: $("#lastName")
         .val()
         .trim(),
-      address: $("#address")
+        address: $("#address")
         .val()
         .trim(),
-      city: $("#city")
+        city: $("#city")
         .val()
         .trim(),
-      state: $("#state")
+        state: $("#state")
         .val()
         .trim(),
-      zip: $("#zip")
+        zip: $("#zip")
         .val()
         .trim(),
     }
   })
     .then(function (data) {
       console.log(data);
-      window.location.replace(data);
+      window.location.reload(data);
     })
     .catch(function (err) {
       console.log(err);

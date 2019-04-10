@@ -32,7 +32,7 @@ $("#user-sign-up").on("submit", function(e) {
   })
     .then(function(data) {
       console.log(data);
-      window.location.replace(data);
+      window.location.reload(data);
     })
     .catch(function(err) {
       console.log(err);

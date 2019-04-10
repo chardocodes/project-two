@@ -3,12 +3,25 @@
     <div class="card mt-4">
       <div class="card-body">
         <h5 class="card-title">HOME PAGE</h5>
+        <p>
+          <strong>Name</strong>:
+          <br>
+          {{users.firstName}} {{users.lastName}}
+          <br>
+          <strong>Address</strong>:
+          <br>
+          {{users.address}}
+          <br>
+          {{users.city}},{{users.state}},{{users.zip}}
+          <br>
+          <strong>Email</strong>:
+          <br>
+          {{users.email}}</a>
+        </p>
+        <p>
 
-   
-        
-        <p><strong>Name</strong>: {{users.firstName}} {{users.lastName }} </p>
-          
-            <a href="/client">← Back To Home</a>
+          {{!-- <strong>Description:</strong> {{example.description}}</p> --}}
+          <a href="/profile">← Back To Dog Walkers</a>
       </div>
     </div>
   </div>

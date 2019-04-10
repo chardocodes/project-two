@@ -8,9 +8,7 @@ module.exports = app => {
   app.get("/signup", (req, res) => res.render("signup", {
     states: states,
   }));
-
-
-  // Load login page
+  
   // app.get("/login", (req, res) => res.render("login"));
 
   // Load profile page
@@ -22,7 +20,7 @@ module.exports = app => {
   });
   app.get("/login", (req, res) => res.render("login"));
   // Load example page and pass in an example by id
-  app.get("/example/:id",  (req, res) => {
+  app.get("/example/:id", (req, res) => {
     db.User.findOne({ where: { id: req.params.id } }).then(dbExample => {
       res.render("example", {
         users: dbExample

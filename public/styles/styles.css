@@ -1,6 +1,4 @@
-/* .list-group-item {
-  line-height: 2.5;
-} */
+
 .imageBox {
   float: right;
   width: 300px;
@@ -14,19 +12,17 @@
    margin-left: 270px;
 }  
 
-/* .card-body {
-  opacity: 10;
-} */
-
+body {
+  background-color: rgb(215, 219, 221);
+}
 .container {
-  background-color: rgb(231, 202, 173); 
   text-align: center;
  
 }
-IMG.displayed {
+/* IMG.displayed {
   display: block;
   margin-left: auto;
-  margin-right: auto }
+  margin-right: auto } */
 
 .card-header {
   background-color: #777;
@@ -37,11 +33,12 @@ IMG.displayed {
    margin-left: 800px;
  }
 
-/* =============================== */
-/*!
- * Start Bootstrap - Freelancer v5.0.4 (https://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
- */
 
- 
+   /* FontAwesome for working BootSnippet :> */
+
+/* @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); */
+
+.profileStyle {
+    background: #eee;
+    background-image: url("https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/dog-running-golden-gate-park-1.jpg")
+}

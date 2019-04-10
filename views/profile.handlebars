@@ -1,21 +1,54 @@
-<div class="row">
-  <div class="col-8 offset-2">
-  
-    <h3><i class="fas fa-dog"></i> Walker Profile </h3>
-    <ul id="example-list" class="list-group">
-      {{#each users}}
-      <li data-id="{{id}}" class="list-group-item">
-        <a href="example/{{id}}">
-        {{firstName}} {{lastName}}
-        <br>
-        {{adress}}
-        <br>
-        {{city}}{{state}}{{zip}}
-        <br>
-        {{email}}</a>
-        <button class="btn btn-danger float-right delete">ｘ</button>
-      </li>
-      {{/each}}
-    </ul>
+<div class="profileStyle">
+  <div class="row">
+    <div class="col-8 offset-2 ">
+
+      {{!-- <img src="https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/dog-running-golden-gate-park-1.jpg"> --}}
+      <h3><i class="fas fa-dog"></i> Walker Profile </h3>
+
+      <ul id="example-list" class="list-group">
+        {{#each users}}
+        <li data-id="{{id}}" class="list-group-item">
+          <a href="example/{{id}}">
+            {{firstName}} {{lastName}}
+            <br>
+            {{adress}}
+            <br>
+            {{city}}{{state}}{{zip}}
+            <br>
+            {{email}}</a>
+          <button class="btn btn-danger float-right delete">ｘ</button>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
   </div>
 </div>
+{{!-- 
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a
+        little longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">It's a broader card with text below as a natural lead-in to extra content. This content is a
+        little longer.This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div> --}}

@@ -9,7 +9,11 @@ $("#user-sign-up").on("submit", function(e) {
         .trim(),
       password: $("#password")
         .val()
-        .trim()
+        .trim(),
+      firstName: $("#name")
+      .val()
+      .trim(),
+
     }
   })
     .then(function(data) {

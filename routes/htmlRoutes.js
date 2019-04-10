@@ -4,18 +4,18 @@ module.exports = app => {
   // Load signup page
   app.get("/", (req, res) => res.render("dogwalkers"));
   app.get("/signup", (req, res) => res.render("signup"));
+  
  
- 
-
 
   // Load login page
-
+  // app.get("/login", (req, res) => res.render("login"));
 
   // Load profile page
   app.get("/profile", (req, res) => {
-    db.User.findall()
-      res.render("profile", { user: dbUser });
- 
+    db.User.findAll().then(dbAllUsers => {
+      console.log(dbAllUsers);
+      res.render("profile", { users : dbAllUsers });
+    });
   });
   app.get("/login", (req, res) => res.render("login"));
   // Load example page and pass in an example by id

@@ -41,7 +41,7 @@ module.exports = (sequelize, DataTypes) => {
     zip: {
       type: DataTypes.STRING,
       allowNull: true
-    },
+    }
   });
 
   User.associate = models => {

@@ -8,10 +8,10 @@
 
         </div>
         <div class="card-body">
+            <form id="user-sign-up">
 
-            <div class="row">
-                <div class="col-md-12">
-                    <form id="user-sign-up">
+                <div class="row">
+                    <div class="col-md-12">
 
                         <div class="col-md-12 mb-3">
                             <label for="validationServer01">First name</label>
@@ -20,72 +20,70 @@
 
                             </div>
                         </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <label for="validationServer02">Last name</label>
-                    <input type="lastName" class="form-control" id="lastName" placeholder="Last name" required>
-                    <div class="valid-feedback">
-
                     </div>
-                </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer02">Last name</label>
+                        <input type="lastName" class="form-control" id="lastName" placeholder="Last name" required>
+                        <div class="valid-feedback">
 
-                <div class="col-md-12 mb-3">
-                    <label for="validationServer03">Address: </label>
-                    <input type="address" class="form-control" id="address" placeholder="Address" required>
-                    <div class="valid-feedback"></div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <label for="validationServer04">City: </label>
-                    <input type="city" class="form-control" id="city" placeholder="City" required>
-                    <div class="valid-feedback"></div>
-                </div>
-
-                <div class="col-md-12 mb-3">
-                    <label for="validationServer05">State: </label>
-                    <select class="form-control" id="state" required>
-                        <option value="" selected>select your state</option>
-                        {{#each states}}
-                        <option>{{ name }}</option>
-                        {{/each}}
-                    </select>
-                    <div class="valid-feedback"></div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <label for="validationServer06">Zip: </label>
-                    <input type="zip" class="form-control" id="zip" placeholder="Zip" required>
-                    <div class="valid-feedback"></div>
-                </div>
-                <div class="col-md-12 mb-3"></div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"
-                        placeholder="Enter email">
-                </div>
-                <div class="col-md-12 mb-3"></div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                </div>
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Upload</span>
+                        </div>
                     </div>
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="inputGroupFile01">
-                        <label class="custom-file-label" for="inputGroupFile01">Input URL</label>
+
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer03">Address: </label>
+                        <input type="address" class="form-control" id="address" placeholder="Address" required>
+                        <div class="valid-feedback"></div>
                     </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer04">City: </label>
+                        <input type="city" class="form-control" id="city" placeholder="City" required>
+                        <div class="valid-feedback"></div>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer05">State: </label>
+                        <select class="form-control" id="state" required>
+                            <option value="" selected>select your state</option>
+                            {{#each states}}
+                            <option>{{ name }}</option>
+                            {{/each}}
+                        </select>
+                        <div class="valid-feedback"></div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer06">Zip: </label>
+                        <input type="zip" class="form-control" id="zip" placeholder="Zip" required>
+                        <div class="valid-feedback"></div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" id="password"
+                                placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                            <label class="custom-file-label" for="inputGroupFile01">Input URL</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
-
-
-            </div>
-
+            </form>
         </div>
-
-        <br>
-        <button type="submit" class="btn btn-primary" class="w-100">Submit</button>
-        </form>
     </div>
+    {{!-- end card/col div --}}
 
-</div>
 </div>

@@ -17,6 +17,11 @@
   font-family: 'Courgette', cursive;
 }
 
+.navbar-brand {
+  text-align: center;
+}
+
+
 body {
   background-image: url("https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-image: url('https://topdogtips.com/wp-content/uploads/2016/07/Dog-Walker-Jobs.jpg');

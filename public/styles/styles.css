@@ -6,6 +6,8 @@
   margin-top: -30px;
 
 }
+
+
 .card {
   box-align: center;
   opacity: 0.8;
@@ -37,6 +39,7 @@ body {
 }
 .container {
   text-align: center;
+ 
  
 }
 /* IMG.displayed {

@@ -45,7 +45,21 @@ body {
   text-align: center;
  
 }
+<<<<<<< HEAD
 
+=======
+/* IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto } */
+
+/* .card-header {
+  background-color: #777;
+  color: ivory;
+  font-family: 'Lobster Two', cursive;
+  
+} */
+>>>>>>> 839602d8408ca0203cd968cede29219461df9438
  .logBox {
    margin-left: 800px;
  }

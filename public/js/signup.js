@@ -33,7 +33,10 @@ $("#user-sign-up").on("submit", function(e) {
         .trim(),
         rate: $("#rate")
         .val()
-        .trim(), 
+        .trim(),
+        imageUrl: $("#user-image")
+        .val()
+        .trim() 
     }
   })
     .then(function(data) {

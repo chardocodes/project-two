@@ -6,6 +6,10 @@
   margin-top: -30px;
 
 }
+
+.fa-dog {
+  font-family: 'Bangers', cursive;
+}
 .card {
   box-align: center;
   opacity: 0.8;
@@ -13,10 +17,15 @@
   font-family: 'Viga', sans-serif;
 }  
 
-.btn {
-  font-family: 'Courgette', cursive;
+.btn-outline-secondary {
+  font-family: 'Bangers', cursive;
+  color: #777;
 }
 
+.title {
+  font-family: 'Bangers', cursive;
+  color: rgb(114, 7, 42);
+}
 .navbar-brand {
   text-align: center;
 }
@@ -39,27 +48,7 @@ body {
   text-align: center;
  
 }
-/* IMG.displayed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto } */
 
-/* .card-header {
-  background-color: #777;
-  color: ivory;
-  font-family: 'Lobster Two', cursive;
-  
-} */
  .logBox {
    margin-left: 800px;
  }
-
-
-   /* FontAwesome for working BootSnippet :> */
-
-/* @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); */
-
-.profileStyle {
-    background: #eee;
-    background-image: url("https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/dog-running-golden-gate-park-1.jpg")
-}

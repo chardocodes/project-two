@@ -1,26 +1,22 @@
-<div class="profileStyle">
-  <div class="row">
-    <div class="col-8 offset-2 ">
-
-      {{!-- <img src="https://25va3qc1hw-flywheel.netdna-ssl.com/wp-content/uploads/2011/03/dog-running-golden-gate-park-1.jpg"> --}}
-      <h3><i class="fas fa-dog"></i> Walker Profile </h3>
-
-      <ul id="example-list" class="list-group">
-        {{#each users}}
-        <li data-id="{{id}}" class="list-group-item">
-          <a href="example/{{id}}">
-            {{firstName}} {{lastName}}
-            <br>
-            {{adress}}
-            <br>
-            {{city}}{{state}}{{zip}}
-            <br>
-            {{email}}</a>
-          <button class="btn btn-danger float-right delete">ｘ</button>
-        </li>
-        {{/each}}
-      </ul>
-    </div>
+<div class="row">
+  <div class="col-8 offset-2">
+  
+    <h3><i class="fas fa-dog"></i> Walker Profile </h3>
+    <ul id="example-list" class="list-group">
+      {{#each users}}
+      <li data-id="{{id}}" class="list-group-item">
+        <a href="example/{{id}}">
+        {{firstName}} {{lastName}}
+        <br>
+        {{adress}}
+        <br>
+        {{city}},{{state}},{{zipcode}}
+        <br>
+        {{email}}</a>
+        {{!-- <button class="btn btn-danger float-right delete">ｘ</button> --}}
+      </li>
+      {{/each}}
+    </ul>
   </div>
 </div>
 {{!-- 

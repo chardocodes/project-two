@@ -1,35 +1,24 @@
-<div class="row" >
+<div class="row">
   <div class="col-8 offset--1">
     <div class="card mt-4">
       <div class="card-body">
-        <h5 class="card-title">HOME PAGE</h5>
-        <p>
-          <strong>Name</strong>:
-          <br>
-          {{users.firstName}} {{users.lastName}}
-          <br>
-          <strong>Address</strong>:
-          <br>
-          {{users.address}}
-          <br>
-          {{users.city}},{{users.state}},{{users.zip}}
-          <br>
-          <strong>Email</strong>:
-          <br>
-          {{users.email}}</a>
-          <br>
-          <strong>Phone number</strong>:
-          <br>
-          {{users.phone}}</a>
-          <br>
-          <strong>Rate</strong>:
-          <br>
-          {{users.rate}}</a>
-        </p>
-        <p>
+        <h5 class="card-title"> {{users.firstName}} {{users.lastName}}</h5>
+        <hr>
+        <ul>
+          <p> Phone number: {{users.phone}}</p>
+          <hr>
+          <p> Email: {{users.email}} </p>
+          <hr>
+          <p> Address: {{users.address}}
+            {{users.city}}, {{users.state}}, {{users.zip}} </p>
+          <hr>
+          <p>Rate: ${{users.rate}} </p>
+        </ul>
 
-          {{!-- <strong>Description:</strong> {{example.description}}</p> --}}
-          <a href="/profile">← Back To Dog Walkers</a>
+
+        <hr>
+        {{!-- <strong>Description:</strong> {{example.description}}</p> --}}
+        <a href="/profile">← Back To Dog Walkers</a>
       </div>
     </div>
   </div>

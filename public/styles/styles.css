@@ -82,10 +82,11 @@ body {
    text-decoration: none;
    display: inline-block;
 }
-
-#mainButton1:hover {
-  color: #3D4852;
+#mainButton1:hover{
+  color: rgb(114, 7, 42);
  }
+
+
 
  #square-image {
    width: 370px;

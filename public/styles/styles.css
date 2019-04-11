@@ -48,3 +48,8 @@ body {
  .logBox {
    margin-left: 800px;
  }
+
+ #square-image {
+   width: 370px;
+   height: 370px;
+ }

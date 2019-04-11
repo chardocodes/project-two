@@ -28,6 +28,12 @@ $("#user-sign-up").on("submit", function (e) {
         zip: $("#zip")
         .val()
         .trim(),
+        phone: $("#phone")
+        .val()
+        .trim(),
+        rate: $("#rate")
+        .val()
+        .trim(), 
     }
   })
     .then(function (data) {

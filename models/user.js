@@ -49,7 +49,15 @@ module.exports = (sequelize, DataTypes) => {
     zip: {
       type: DataTypes.STRING,
       allowNull: true
-    }
+    },
+    phone: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    rate: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
   });
 
   User.associate = models => {

@@ -11,20 +11,35 @@
   box-align: center;
   opacity: 0.8;
   margin-left: 270px;
-  font-family: 'Viga', sans-serif;
+  font-family: 'Crete Round', serif;
 }  
 
 .btn-outline-secondary {
-  font-family: 'Bangers', cursive;
+  font-family: 'Crete Round', serif;
   color: #777;
 }
 
+#example-list {
+  opacity: .8;
+}
+
 .title {
-  font-family: 'Bangers', cursive;
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
   color: rgb(114, 7, 42);
 }
-.navbar-brand {
+.navStyle {
+  font-family: 'Crete Round', serif;
+  font-size: 20px;
+  color:#777;
+}
+
+.navStyle2 {
+  color:#777;
   text-align: center;
+  font-family: 'Crete Round', serif;
+  font-size: 20px;
+  margin-left: 290px;
 }
 
 
@@ -36,8 +51,7 @@ body {
   /* background-position: center;  */
   background-size: cover;
   border-bottom-color: #eee;
-  font-family: 'Lobster Two', cursive;
-  font-family: 'Viga', sans-serif;
+  font-family: 'Crete Round', serif;
   
 
 }

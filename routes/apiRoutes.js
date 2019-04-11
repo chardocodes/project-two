@@ -57,7 +57,8 @@ module.exports = app => {
       email: req.body.email,
       phone: req.body.phone,
       rate: req.body.rate,
-      password: req.body.password
+      password: req.body.password,
+      imageUrl: req.body.imageUrl
     })
       .then(() => {
         res.redirect(307, "/api/login");

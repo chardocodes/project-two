@@ -1,32 +1,45 @@
-
 .imageBox {
   float: right;
   width: 300px;
   height: 470px;
   margin-top: -30px;
-
 }
 
 .card {
   box-align: center;
   opacity: 0.8;
   margin-left: 270px;
-  font-family: 'Viga', sans-serif;
+  font-family: 'Crete Round', serif;
 }  
 
 .btn-outline-secondary {
-  font-family: 'Bangers', cursive;
+  font-family: 'Crete Round', serif;
   color: #777;
 }
 
-.title {
-  font-family: 'Bangers', cursive;
-  color: rgb(114, 7, 42);
-}
-.navbar-brand {
-  text-align: center;
+#example-list {
+  opacity: .8;
 }
 
+.title {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  color: rgb(114, 7, 42);
+}
+
+.navStyle {
+  font-family: 'Crete Round', serif;
+  font-size: 20px;
+  color:#777;
+}
+
+.navStyle2 {
+  color:#777;
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  font-size: 20px;
+  margin-left: 290px;
+}
 
 body {
   background-image: url("https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
@@ -36,41 +49,46 @@ body {
   /* background-position: center;  */
   background-size: cover;
   border-bottom-color: #eee;
-  font-family: 'Lobster Two', cursive;
-  font-family: 'Viga', sans-serif;
-  
+  font-family: 'Crete Round', serif;
+  }
 
-}
-.container {
+  .container {
   text-align: center;
- 
- 
 }
- .logBox {
+
+.logBox {
    margin-left: 800px;
  }
- #profile{
+
+ #profile {
   opacity: 0.8;
  }
- #mainButton{
-  
-  color: black;
-  
+
+ #mainButton {
+   color: black;
    text-align: center;
    text-decoration: none;
    display: inline-block;
  }
- #mainButton:hover{
+ 
+ #mainButton:hover {
   color: white;
   background-color: rgb(114, 7, 42);
  }
-#mainButton1{
-  color: black;
-  
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+
+ #mainButton1 {
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
 }
 #mainButton1:hover{
   color: rgb(114, 7, 42);
+ }
+
+
+
+ #square-image {
+   width: 370px;
+   height: 370px;
  }

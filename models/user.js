@@ -58,6 +58,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: true
     },
+    imageUrl: {
+      type: DataTypes.STRING,
+      allowNull: true
+    }
   });
 
   User.associate = models => {

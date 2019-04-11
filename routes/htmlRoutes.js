@@ -18,7 +18,7 @@ module.exports = app => {
       res.render("profile", { users : dbAllUsers });
     });
   });
-
+  app.get("/login", (req, res) => res.render("login"));
   // Load example page and pass in an example by id
   app.get("/example/:id", (req, res) => {
     db.User.findOne({ where: { id: req.params.id } }).then(dbExample => {

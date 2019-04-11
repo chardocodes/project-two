@@ -58,7 +58,33 @@ body {
 .container {
   text-align: center;
  
+ 
 }
  .logBox {
    margin-left: 800px;
+ }
+ #profile{
+  opacity: 0.8;
+ }
+ #mainButton{
+  
+  color: black;
+  
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+ }
+ #mainButton:hover{
+  color: white;
+  background-color: rgb(114, 7, 42);
+ }
+#mainButton1{
+  color: black;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#mainButton1:hover{
+  color: #3D4852;
  }

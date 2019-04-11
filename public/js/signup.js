@@ -1,4 +1,4 @@
-$("#user-sign-up").on("submit", function(e) {
+$("#user-sign-up").on("submit", function (e) {
   e.preventDefault();
   $.ajax({
     method: "POST",
@@ -39,11 +39,11 @@ $("#user-sign-up").on("submit", function(e) {
         .trim() 
     }
   })
-    .then(function(data) {
+    .then(function (data) {
       console.log(data);
       window.location.replace(data);
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.log(err);
       alert(err.responseText);
     });

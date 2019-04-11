@@ -1,19 +1,31 @@
-<div class="row">
+<div id="profile" class="row">
+ 
   <div class="col-8 offset-2">
-  
-    <h3><i class="fas fa-dog"></i> Walker Profile </h3>
+   
+    <h3><div class="title"> Walker Profiles </div></h3>
     <ul id="example-list" class="list-group">
       {{#each users}}
       <li data-id="{{id}}" class="list-group-item">
         <a href="example/{{id}}">
-        {{firstName}} {{lastName}} {{rate}}
+        {{firstName}} {{lastName}} {{zip}}
         
         {{!-- <button class="btn btn-danger float-right delete">ｘ</button> --}}
       </li>
       {{/each}}
     </ul>
   </div>
+
+ 
 </div>
+<style>
+.profile{
+  color: black;
+}
+.profile:hover{
+  color: #777;
+
+}
+</style>
 {{!-- 
 <div class="card-group">
   <div class="card">

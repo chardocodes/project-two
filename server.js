@@ -5,6 +5,9 @@ const exphbs = require("express-handlebars");
 
 const db = require("./models");
 
+// force re-write schema of db ?
+const FORCE_DB = process.env.FORCE_DB || false;
+
 const app = express();
 const PORT = process.env.PORT || 8080;
 const morgan = require("morgan");
@@ -13,7 +16,7 @@ const morgan = require("morgan");
 const passport = require("./config/passport");
 
 // Middleware
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
@@ -44,7 +47,7 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-const syncOptions = { force: false };
+const syncOptions = { force: FORCE_DB };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`

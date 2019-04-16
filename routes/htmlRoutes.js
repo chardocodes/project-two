@@ -14,12 +14,26 @@ module.exports = app => {
   // Load profile page
   app.get("/profile", (req, res) => {
     db.User.findAll().then(dbAllUsers => {
-      console.log(dbAllUsers);
+    
       res.render("profile", { users : dbAllUsers });
     });
   });
   app.get("/login", (req, res) => res.render("login"));
   // Load example page and pass in an example by id
+
+  app.get("/update", (req, res) => {
+    let currentUser = req.user
+    
+  
+  
+  
+  
+  res.render("update", {
+    user: currentUser
+  })});
+
+  
+
   app.get("/example/:id", (req, res) => {
     db.User.findOne({ where: { id: req.params.id } }).then(dbExample => {
       res.render("example", {

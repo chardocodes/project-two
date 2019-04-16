@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand navStyle" href="/"><i class="fas fa-walking"></i><i class="fas fa-dog"></i> D O G O </a>
+      <a class="navbar-brand navStyle" href="/"><i class="fas fa-walking"></i><i class="fas fa-dog"></i><span> D O </span> <span id="dogo"> G O  </span> </a>
       <a class="navbar-brand navStyle2" href="/"> -Dog Walking Service Since 1976- </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
         <ul class="navbar-nav">
           {{#unless user}}
           <li class="nav-item">
-            <a class="nav-link navStyle" href="/"><i class="fas fa-home"></i>H O M E</a>
+            <a class="nav-link navStyle" href="/login"><i class="fas fa-home"></i>L O G I N </a>
           </li>
           {{!-- <li class="nav-item">
             <a class="nav-link" href="/login">Login</a>
@@ -68,6 +68,7 @@
   <script src="/js/index.js"></script>
   <script src="/js/signup.js"></script>
   <script src="/js/login.js"></script>
+  <script src="/js/update.js"></script>
 </body>
 
 </html>

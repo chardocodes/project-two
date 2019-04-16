@@ -1,46 +1,37 @@
-<div class="container">
 
-    <br>
-    <div class="card col-md-6">
-
-        <div class="card-header">
-            <i class="fas fa-dog"></i><span> D O </span> <span id="dogo"> G O  </span>| Dog-walker Sign Up
-
-        </div>
-        <div class="card-body">
-            <form id="user-sign-up">
+        <form id="update-form">
 
                 <div class="row">
                     <div class="col-md-12">
 
                         <div class="col-md-12 mb-3">
                             <label for="validationServer01">First name</label>
-                            <input type="name" class="form-control" id="name" placeholder="First name" required>
+                            <input value={{user.firstName}} type="name" class="form-control" id="name" placeholder="First name" required>
                             <div class="valid-feedback"></div>
                         </div>
                     
                     
                     <div class="col-md-12 mb-3">
                         <label for="validationServer02">Last name</label>
-                        <input type="lastName" class="form-control" id="lastName" placeholder="Last name" required>
+                        <input value={{user.lastName}} type="lastName" class="form-control" id="lastName" placeholder="Last name" required>
                         <div class="valid-feedback"></div>
                     </div>
 
                     <div class="col-md-12 mb-3">
                         <label for="validationServer03">Address: </label>
-                        <input type="address" class="form-control" id="address" placeholder="Address" required>
+                        <input value={{user.address}} type="address" class="form-control" id="address" placeholder="Address" required>
                         <div class="valid-feedback"></div>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="validationServer04">City: </label>
-                        <input type="city" class="form-control" id="city" placeholder="City" required>
+                        <input value={{user.city}} type="city" class="form-control" id="city" placeholder="City" required>
                         <div class="valid-feedback"></div>
                     </div>
 
                     <div class="col-md-12 mb-3">
                         <label for="validationServer05">State: </label>
                         <select class="form-control" id="state" required>
-                            <option value="" selected>select your state</option>
+                            <option value={{user.state}} selected>select your state</option>
                             {{#each states}}
                             <option>{{ name }}</option>
                             {{/each}}
@@ -49,34 +40,34 @@
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="validationServer06">Zip: </label>
-                        <input type="zip" class="form-control" id="zip" placeholder="Zip" required>
+                        <input value={{user.zip}} type="zip" class="form-control" id="zip" placeholder="Zip" required>
                         <div class="valid-feedback"></div>
                     </div>
                     <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" name="email" class="form-control" id="email"
+                            <input value={{user.email}} type="email" name="email" class="form-control" id="email"
                                 aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
                     </div>
                      <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="phone" name="phone" class="form-control" id="phone"
+                            <input value={{user.phone}} type="phone" name="phone" class="form-control" id="phone"
                                 aria-describedby="phoneHelp" placeholder="Enter phone number">
                         </div>
                     </div>
                      <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="rate">Rate</label>
-                            <input type="rate" name="rate" class="form-control" id="rate"
+                            <input value={{user.rate}} type="rate" name="rate" class="form-control" id="rate"
                                 aria-describedby="rateHelp" placeholder="Enter Rate">
                         </div>
                     </div>
                     <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" class="form-control" id="password"
+                            <input value={{user.password}} type="password" name="password" class="form-control" id="password"
                                 placeholder="Password">
                         </div>
                     </div>
@@ -84,7 +75,7 @@
                     <div class="col-md-12 mb-3">
                         <div class="form-group">
                             <label for="user-image">User Image</label>
-                            <input type="url" name="user-image" class="form-control" id="user-image"
+                            <input value={{user.imageUrl}}  type="text" name="user-image" class="form-control" id="user-image"
                                 placeholder="user image url">
                         </div>
                     </div>
@@ -102,8 +93,4 @@
                     </div>
                 </div>
             </form>
-        </div>
-    </div>
-    {{!-- end card/col div --}}
-
-</div>
+ 
